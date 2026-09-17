@@ -73,7 +73,7 @@
 
             </a>
 
-            <a href="mailto:student@email.com"
+            <a href="mailto:om.prasiddha.gautam@gmail.com"
                 aria-label="Email">
 
                 <i class="fa-solid fa-envelope"></i>
@@ -146,12 +146,30 @@
         </h2>
 
         <div class="skills-grid">
-            <div class="skill-card"><i class="fa-brands fa-python"></i>Python</div>
-            <div class="skill-card"><i class="fa-brands fa-html5"></i>HTML</div>
-            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i>CSS</div>
-            <div class="skill-card"><i class="fa-brands fa-js"></i>JavaScript</div>
-            <div class="skill-card"><i class="fa-solid fa-gamepad"></i>Pygame</div>
-            <div class="skill-card"><i class="fa-solid fa-mug-hot"></i> CoffeeScript</div>
+            <div class="skill-card">
+                <div class="skill-header"><i class="fa-brands fa-python"></i><span>Python</span><span class="skill-pct">92%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header"><i class="fa-brands fa-html5"></i><span>HTML</span><span class="skill-pct">88%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header"><i class="fa-brands fa-css3-alt"></i><span>CSS</span><span class="skill-pct">85%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header"><i class="fa-brands fa-js"></i><span>JavaScript</span><span class="skill-pct">78%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 78%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header"><i class="fa-solid fa-gamepad"></i><span>Pygame</span><span class="skill-pct">90%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header"><i class="fa-solid fa-mug-hot"></i><span>CoffeeScript</span><span class="skill-pct">64%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 64%;"></div></div>
+            </div>
         </div>
 
     </section>
@@ -227,15 +245,6 @@
             <!-- PROJECT 1 -->
             <div class="project-card">
 
-                <div class="project-img">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&auto=format&fit=crop"
-                        alt="Python Calculator Code">
-
-                </div>
-
-
                 <div class="project-info">
 
                     <h3>
@@ -262,8 +271,6 @@
                         operational loops.
                     </p>
 
-
-
                 </div>
 
             </div>
@@ -271,15 +278,6 @@
 
             <!-- PROJECT 2 -->
             <div class="project-card">
-
-                <div class="project-img">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop"
-                        alt="Number Guessing Game">
-
-                </div>
-
 
                 <div class="project-info">
 
@@ -307,22 +305,12 @@
                         continuous loops.
                     </p>
 
-
-
                 </div>
 
             </div>
 
+            <!-- PROJECT 3 -->
             <div class="project-card">
-
-                <div class="project-img">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop"
-                        alt="Catch the Gift Box Game">
-
-                </div>
-
 
                 <div class="project-info">
 
@@ -350,54 +338,40 @@
                         and soundtracks.
                     </p>
 
-
-
-
                 </div>
 
             </div>
 
-
-
+            <!-- PROJECT 4 (3D Earth Explorer) -->
             <div class="project-card">
-
-                <div class="project-img">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&auto=format&fit=crop"
-                        alt="Gaming Project">
-
-                </div>
-
 
                 <div class="project-info">
 
                     <h3>
-                        E-Gaming Project
+                        3D Earth Explorer
                     </h3>
 
 
                     <div class="tags">
 
                         <span class="tag">
-                            Gaming
+                            Interactive
                         </span>
 
                         <span class="tag">
-                            Python
+                            WebGL
                         </span>
 
                     </div>
 
 
                     <p>
-                        An interactive gaming project focused on
-                        gameplay mechanics, player interaction,
-                        and efficient game logic.
+                        An interactive 3D explorer visualizing planetary data and space models directly in the browser.
                     </p>
 
-
-
+                    <a href="https://prasiddha976.github.io/Pg-explorer/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                        Explore Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
 
                 </div>
 
@@ -419,11 +393,14 @@
 
         <form
             class="contact-form"
+            action="https://formspree.io/f/om.prasiddha.gautam@gmail.com"
+            method="POST"
             onsubmit="sendMessage(event)">
 
 
             <input
                 type="text"
+                name="name"
                 id="name"
                 placeholder="Your Name"
                 required>
@@ -431,12 +408,14 @@
 
             <input
                 type="email"
+                name="email"
                 id="email"
                 placeholder="Your Email"
                 required>
 
 
             <textarea
+                name="message"
                 id="message"
                 placeholder="Your Message"
                 rows="6"
