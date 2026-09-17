@@ -102,7 +102,7 @@ section {
 
 .hero-image img,
 .hero-image img.raw-png {
-    width: 380px; /* Increased size */
+    width: 600px; /* Increased size */
     height: auto;
     object-fit: contain;
     border: none !important;
