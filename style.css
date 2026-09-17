@@ -92,7 +92,7 @@ section {
     margin-bottom: 25px;
 }
 
-/* Raw PNG styles - completely borderless, no shape restrictions */
+/* Larger Raw PNG styles - borderless and shape-free */
 .hero-image {
     background: transparent !important;
     border: none !important;
@@ -102,7 +102,7 @@ section {
 
 .hero-image img,
 .hero-image img.raw-png {
-    width: 280px;
+    width: 380px; /* Increased size */
     height: auto;
     object-fit: contain;
     border: none !important;
@@ -320,5 +320,9 @@ footer {
     #hero {
         flex-direction: column-reverse;
         text-align: center;
+    }
+    .hero-image img,
+    .hero-image img.raw-png {
+        width: 280px; /* Adjusted slightly smaller for mobile screens */
     }
 }
