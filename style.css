@@ -92,7 +92,15 @@ section {
     margin-bottom: 25px;
 }
 
-
+.hero-image img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
 
 .social-links a {
     font-size: 1.5rem;
