@@ -92,14 +92,24 @@ section {
     margin-bottom: 25px;
 }
 
-.hero-image img {
-    width: 260px;
-    height: 260px;
-    object-fit: cover;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    background: transparent;
+/* Raw PNG styles - completely borderless, no shape restrictions */
+.hero-image {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.hero-image img,
+.hero-image img.raw-png {
+    width: 280px;
+    height: auto;
+    object-fit: contain;
+    border: none !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
 }
 
 .social-links a {
