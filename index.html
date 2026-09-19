@@ -4,521 +4,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Prasiddha Gautam</title>
+    <title>Prasiddha Gautam | Portfolio</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
     <meta name="google-site-verification" content="O0N8e2zsnhHtk64YXRyRo5qpIClkpO4u2ro8u6xDzCA" />
+    
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
     <nav>
-
         <div class="logo">
             &lt;PG/&gt;
         </div>
 
-        <ul>
-            <li>
-                <a href="#about">
-                    <i class="fa-solid fa-user"></i>
-                    About
-                </a>
-            </li>
-
-            <li>
-                <a href="#skills">
-                    <i class="fa-solid fa-code"></i>
-                    Skills
-                </a>
-            </li>
-
-            <li>
-                <a href="#projects">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    Projects
-                </a>
-            </li>
-
-            <li>
-                <a href="#contact">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    Contact
-                </a>
-            </li>
+        <ul class="nav-links">
+            <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+            <li><a href="#services"><i class="fa-solid fa-layer-group"></i> Services</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
         </ul>
 
         <div class="social-links">
-
-            <a href="https://github.com/Prasiddha976"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub">
-
+            <a href="https://github.com/Prasiddha976" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
-
             </a>
-
-            <a href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn">
-
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
-
             </a>
-
-            <a href="mailto:om.prasiddha.gautam@gmail.com"
-                aria-label="Email">
-
+            <a href="mailto:om.prasiddha.gautam@gmail.com" aria-label="Email">
                 <i class="fa-solid fa-envelope"></i>
-
             </a>
-
         </div>
-
     </nav>
 
-
-    <section id="hero">
-
+    <header id="hero">
         <div class="hero-text">
-
+            <div class="badge">
+                <span class="pulse-dot"></span> CS Student &amp; Future Physicist
+            </div>
             <h1>
                 Hi, I'm
                 <span>Prasiddha Gautam</span>
             </h1>
-
             <p>
-                Python Developer &amp; Frontend Web Specialist
+                A passionate computer science student deeply in love with coding, building physics simulations, and carving out a future at the intersection of tech and advanced physics.
             </p>
-
-            <button
-                class="btn"
-                onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
-
-                Get In Touch
-
-            </button>
-
+            <div class="hero-btns">
+                <button class="btn primary-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    Get In Touch
+                </button>
+                <button class="btn secondary-btn" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                    View Projects
+                </button>
+            </div>
         </div>
-
 
         <div class="hero-image">
-
-            <img
-                src="bd3ad5a1-2ac8-48c5-b70b-98a8f5e5e121-removebg-preview.png"
-                alt="Profile Photo" class="raw-png">
-
+            <img src="bd3ad5a1-2ac8-48c5-b70b-98a8f5e5e121-removebg-preview.png" alt="Prasiddha Gautam Profile Photo" class="raw-png">
         </div>
+    </header>
 
-    </section>
+    <main>
+        <section id="about" class="reveal">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I am a dedicated student deeply fascinated by software development, interactive mechanics, and scientific computation. Whether I'm building custom tools in Python, crafting responsive interfaces, or modeling quantum and atomic systems, I love turning complex logic into reality.
+            </p>
+        </section>
 
-
-
-    <section id="about">
-
-        <h2 class="section-title">
-            About Me
-        </h2>
-
-        <p>
-            I am a passionate technology student skilled in building
-            backend logic using Python and crafting clean, responsive
-            user interfaces with HTML, CSS, and JavaScript while
-            implementing physics logic and Pygame to make efficient
-            programs.
-        </p>
-
-    </section>
-
-
-
-    <section id="skills">
-
-        <h2 class="section-title">
-            Technical Skills
-        </h2>
-
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-header"><i class="fa-brands fa-python"></i><span>Python</span><span class="skill-pct">92%</span></div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-header"><i class="fa-brands fa-html5"></i><span>HTML</span><span class="skill-pct">88%</span></div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-header"><i class="fa-brands fa-css3-alt"></i><span>CSS</span><span class="skill-pct">85%</span></div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-header"><i class="fa-brands fa-js"></i><span>JavaScript</span><span class="skill-pct">78%</span></div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 78%;"></div></div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-header"><i class="fa-solid fa-gamepad"></i><span>Pygame</span><span class="skill-pct">90%</span></div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-header"><i class="fa-solid fa-mug-hot"></i><span>CoffeeScript</span><span class="skill-pct">64%</span></div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 64%;"></div></div>
-            </div>
-        </div>
-
-    </section>
-
-
-
-    <section id="services">
-
-        <h2 class="section-title">
-            What I Do
-        </h2>
-
-
-        <div class="services-grid">
-
-            <div class="service-card">
-
-                <h3>
-                    Python Logic
-                </h3>
-
-                <p>
-                    Developing clean algorithm logic, CLI utilities,
-                    physics-based systems, games, and automation scripts
-                    using Python.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <h3>
-                    Web Design
-                </h3>
-
-                <p>
-                    Building responsive, modern, and dark-themed
-                    websites using clean HTML, CSS, and JavaScript.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <h3>
-                    Game Development
-                </h3>
-
-                <p>
-                    Creating interactive games using Python and Pygame,
-                    including game physics, movement systems, levels,
-                    and sound effects.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="projects">
-
-        <h2 class="section-title">
-            Featured Projects
-        </h2>
-
-
-        <div class="projects-grid">
-
-
-            <!-- PROJECT 1 -->
-            <div class="project-card">
-
-                <div class="project-info">
-
-                    <h3>
-                        CLI Python Calculator
-                    </h3>
-
-
-                    <div class="tags">
-
-                        <span class="tag">
-                            Python
-                        </span>
-
-                        <span class="tag">
-                            Math
-                        </span>
-
+        <section id="skills" class="reveal">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                        <span class="skill-pct" data-target="92">0%</span>
                     </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="92"></div>
+                    </div>
+                </div>
 
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML</span>
+                        <span class="skill-pct" data-target="88">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="88"></div>
+                    </div>
+                </div>
 
-                    <p>
-                        A full terminal-based calculator featuring
-                        error handling, power functions, and continuous
-                        operational loops.
-                    </p>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>CSS</span>
+                        <span class="skill-pct" data-target="85">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="85"></div>
+                    </div>
+                </div>
 
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-brands fa-js"></i>
+                        <span>JavaScript</span>
+                        <span class="skill-pct" data-target="78">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="78"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>Pygame</span>
+                        <span class="skill-pct" data-target="90">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-atom"></i>
+                        <span>Physics Simulation</span>
+                        <span class="skill-pct" data-target="86">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="86"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="reveal">
+            <h2 class="section-title">What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Python Logic &amp; Automation</h3>
+                    <p>Developing clean algorithm architecture, scripts, and physics calculation models using Python.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Frontend Web Development</h3>
+                    <p>Building responsive, modern, dark-themed user interfaces with smooth layouts and clean CSS/JS.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Scientific &amp; Game Physics</h3>
+                    <p>Creating interactive simulations, educational web apps, and physics-based logic engines.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>CLI Python Calculator</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Math</span>
+                        </div>
+                        <p>A full terminal-based calculator featuring error handling, power functions, and continuous operational loops.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Number Guessing Game</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Logic</span>
+                        </div>
+                        <p>An interactive guessing game built with Python conditional logic, random generators, and continuous loops.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Catch the Gift Box</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pygame</span>
+                        </div>
+                        <p>An interactive catching game built with Python and Pygame featuring multiple levels, game physics, and sounds.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>3D Earth Explorer</h3>
+                        <div class="tags">
+                            <span class="tag">Interactive</span>
+                            <span class="tag">WebGL</span>
+                        </div>
+                        <p>An interactive 3D explorer visualizing planetary data and space models directly in the browser.</p>
+                        <a href="https://prasiddha976.github.io/Pg-explorer/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            Explore Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Advanced Quantum Mechanics Web Laboratory</h3>
+                        <div class="tags">
+                            <span class="tag">Physics</span>
+                            <span class="tag">Simulation</span>
+                        </div>
+                        <p>An advanced quantum laboratory incorporating multi-qubit entanglement, real-time Hamiltonian precession, educational presets, and KaTeX math rendering.</p>
+                        <a href="https://prasiddha976.github.io/Quantum-lab/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            Explore Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Interactive Bohr Model Element Sandbox</h3>
+                        <div class="tags">
+                            <span class="tag">Chemistry</span>
+                            <span class="tag">Interactive</span>
+                        </div>
+                        <p>An interactive periodic table and Bohr model sandbox for exploring atomic structures, electron shells, and element properties.</p>
+                        <a href="https://prasiddha976.github.io/Interactive-Bohr-Model-Element-Sandbox/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            Explore Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
                 </div>
 
             </div>
-
-
-            <!-- PROJECT 2 -->
-            <div class="project-card">
-
-                <div class="project-info">
-
-                    <h3>
-                        Number Guessing Game
-                    </h3>
-
-
-                    <div class="tags">
-
-                        <span class="tag">
-                            Python
-                        </span>
-
-                        <span class="tag">
-                            Logic
-                        </span>
-
-                    </div>
-
-
-                    <p>
-                        An interactive guessing game built with Python
-                        conditional logic, random generators, and
-                        continuous loops.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- PROJECT 3 -->
-            <div class="project-card">
-
-                <div class="project-info">
-
-                    <h3>
-                        Catch the Gift Box
-                    </h3>
-
-
-                    <div class="tags">
-
-                        <span class="tag">
-                            Python
-                        </span>
-
-                        <span class="tag">
-                            Pygame
-                        </span>
-
-                    </div>
-
-
-                    <p>
-                        An interactive catching game built with Python
-                        and Pygame with multiple levels, game physics,
-                        and soundtracks.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- PROJECT 4 -->
-            <div class="project-card">
-
-                <div class="project-info">
-
-                    <h3>
-                        3D Earth Explorer
-                    </h3>
-
-
-                    <div class="tags">
-
-                        <span class="tag">
-                            Interactive
-                        </span>
-
-                        <span class="tag">
-                            WebGL
-                        </span>
-
-                    </div>
-
-
-                    <p>
-                        An interactive 3D explorer visualizing planetary data and space models directly in the browser.
-                    </p>
-
-                    <a href="https://prasiddha976.github.io/Pg-explorer/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                        Explore Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- PROJECT 5 -->
-            <div class="project-card">
-
-                <div class="project-info">
-
-                    <h3>
-                        Advanced Quantum Mechanics Web Laboratory
-                    </h3>
-
-
-                    <div class="tags">
-
-                        <span class="tag">
-                            Physics
-                        </span>
-
-                        <span class="tag">
-                            Simulation
-                        </span>
-
-                    </div>
-
-
-                    <p>
-                        An advanced quantum laboratory incorporating multi-qubit entanglement, real-time Hamiltonian precession, educational presets, KaTeX math rendering, and physics concept notes.
-                    </p>
-
-                    <a href="https://prasiddha976.github.io/Quantum-lab/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                        Explore Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- PROJECT 6 (Interactive Bohr Model Element Sandbox) -->
-            <div class="project-card">
-
-                <div class="project-info">
-
-                    <h3>
-                        Interactive Bohr Model Element Sandbox
-                    </h3>
-
-
-                    <div class="tags">
-
-                        <span class="tag">
-                            Chemistry
-                        </span>
-
-                        <span class="tag">
-                            Interactive
-                        </span>
-
-                    </div>
-
-
-                    <p>
-                        An interactive periodic table and Bohr model sandbox for exploring atomic structures, electron shells, and element properties.
-                    </p>
-
-                    <a href="https://prasiddha976.github.io/Interactive-Bohr-Model-Element-Sandbox/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                        Explore Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <section id="contact">
-
-        <h2 class="section-title">
-            Contact Me
-        </h2>
-
-
-        <form
-            class="contact-form"
-            action="https://formspree.io/f/om.prasiddha.gautam@gmail.com"
-            method="POST"
-            onsubmit="sendMessage(event)">
-
-
-            <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Your Name"
-                required>
-
-
-            <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your Email"
-                required>
-
-
-            <textarea
-                name="message"
-                id="message"
-                placeholder="Your Message"
-                rows="6"
-                required></textarea>
-
-
-            <button
-                class="btn"
-                type="submit">
-
-                Send Message
-
-            </button>
-
-
-        </form>
-
-    </section>
-
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form" action="https://formspree.io/f/om.prasiddha.gautam@gmail.com" method="POST" onsubmit="sendMessage(event)">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
+                <button class="btn primary-btn" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-
-        <p>
-            &copy; 2026 Prasiddha Gautam.
-            All rights reserved.
-        </p>
-
+        <p>&copy; 2026 Prasiddha Gautam. All rights reserved.</p>
     </footer>
-
 
     <!-- JavaScript -->
     <script src="./script.js"></script>
-
 </body>
 
 </html>
