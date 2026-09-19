@@ -13,6 +13,11 @@ body {
     background-color: #000000;
     color: #ffffff;
     line-height: 1.6;
+    /* Grid texture background */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
 }
 
 a {
@@ -20,6 +25,7 @@ a {
     text-decoration: none;
 }
 
+/* Nav */
 nav {
     display: flex;
     justify-content: space-between;
@@ -38,22 +44,38 @@ nav .logo {
     color: #ffffff;
 }
 
-nav ul {
+.nav-links {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-nav a {
+.nav-links a {
     color: #888888;
     font-weight: 500;
     transition: 0.3s;
 }
 
-nav a:hover {
+.nav-links a:hover {
     color: #ffffff;
 }
 
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    color: #888888;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+/* Sections */
 section {
     padding: 80px 8%;
     max-width: 1100px;
@@ -69,12 +91,44 @@ section {
     padding-bottom: 5px;
 }
 
+/* Hero Section */
 #hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 70vh;
+    min-height: 75vh;
     gap: 40px;
+    padding: 80px 8%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #111111;
+    border: 1px solid #222222;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #ffffff;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.8; }
 }
 
 .hero-text h1 {
@@ -87,9 +141,14 @@ section {
 }
 
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #888888;
     margin-bottom: 25px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
 }
 
 /* Larger Raw PNG styles - borderless and shape-free */
@@ -102,7 +161,7 @@ section {
 
 .hero-image img,
 .hero-image img.raw-png {
-    width: 600px; /* Increased size */
+    width: 380px;
     height: auto;
     object-fit: contain;
     border: none !important;
@@ -112,39 +171,44 @@ section {
     background: transparent !important;
 }
 
-.social-links a {
-    font-size: 1.5rem;
-    color: #888888;
-    margin-right: 15px;
-    transition: 0.3s;
-}
-
-.social-links a:hover {
-    color: #ffffff;
-}
-
+/* Buttons */
 .btn {
-    background: #ffffff;
-    color: #000000;
     padding: 12px 24px;
     font-weight: bold;
     border-radius: 6px;
-    border: none;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.btn:hover {
+.primary-btn {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+}
+
+.primary-btn:hover {
     background: #cccccc;
 }
 
+.secondary-btn {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+.secondary-btn:hover {
+    background: #111111;
+    border-color: #ffffff;
+}
+
+/* About */
 #about p {
     color: #cccccc;
     font-size: 1.1rem;
     max-width: 800px;
-    margin-bottom: 15px;
 }
 
+/* Skills */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -194,8 +258,11 @@ section {
     height: 100%;
     background: #ffffff;
     border-radius: 4px;
+    width: 0%; /* Starts at 0 for JavaScript animation */
+    transition: width 1.5s cubic-bezier(0.1, 0.8, 0.3, 1);
 }
 
+/* Services */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -207,6 +274,11 @@ section {
     padding: 25px;
     border-radius: 8px;
     border: 1px solid #222222;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    border-color: #444;
 }
 
 .service-card h3 {
@@ -214,6 +286,11 @@ section {
     margin-bottom: 10px;
 }
 
+.service-card p {
+    color: #888888;
+}
+
+/* Projects */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -255,6 +332,7 @@ section {
     display: flex;
     gap: 8px;
     margin-bottom: 15px;
+    flex-wrap: wrap;
 }
 
 .tag {
@@ -284,6 +362,7 @@ section {
     background: #cccccc;
 }
 
+/* Contact Form */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -307,6 +386,7 @@ section {
     border-color: #666;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 30px;
@@ -316,13 +396,31 @@ footer {
     margin-top: 50px;
 }
 
+/* Scroll Reveal Animation Base */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media (max-width: 768px) {
     #hero {
         flex-direction: column-reverse;
         text-align: center;
     }
+    .hero-btns {
+        justify-content: center;
+    }
     .hero-image img,
     .hero-image img.raw-png {
-        width: 280px; /* Adjusted slightly smaller for mobile screens */
+        width: 280px;
+    }
+    .nav-links {
+        display: none;
     }
 }
